@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+defmodule BasicFeatures do
+# This function demonstrates pattern matching
+def pattern_matching_example do
+{a, b, c} = {1, 2, 3}
+IO.puts("a: #{a}, b: #{b}, c: #{c}")
+end
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+# This function demonstrates recursion
+def recursion_example(0), do: 0
+def recursion_example(n), do: n + recursion_example(n - 1)
 
-<body>
-    <div id="fre"></div>
-    <div class="gre"></div>
-</body>
+# This function demonstrates anonymous functions
+def anonymous_function_example do
+add = fn (a, b) -> a + b end
+IO.puts("Sum: #{add.(2, 3)}")
+end
 
-</html>
+# This function demonstrates list comprehensions
+def list_comprehension_example do
+for n <- 1..5, do: n * n end # This function demonstrates the use of modules and functions defmodule Math do def add(a,
+    b), do: a + b def subtract(a, b), do: a - b end def module_function_example do IO.puts("Addition: #{Math.add(5,
+    3)}") IO.puts("Subtraction: #{Math.subtract(5, 3)}") end end # Running the examples
+    BasicFeatures.pattern_matching_example() IO.puts("Recursion example (sum of first 5 numbers):
+    #{BasicFeatures.recursion_example(5)}") BasicFeatures.anonymous_function_example()
+    IO.inspect(BasicFeatures.list_comprehension_example()) BasicFeatures.module_function_example()

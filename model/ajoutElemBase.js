@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", afficheElem);
 
 
 function afficheElem () {
-
-
     afficheNav();
     afficheFoot();
 }
