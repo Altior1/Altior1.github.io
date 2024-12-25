@@ -22,12 +22,19 @@ defmodule Calculator do
   def divide(_, 0) do
     "Erreur: Division par zéro impossible"
   end
+
+  def newFonction(a, b) do
+    if(a>b) do
+      "ok"
+    else
+      "ko"
+    end
+  end
+
+  def newFonction(_,0) do
+    "obv ok"
+  end
 end
 
 # Exemples d'utilisation
-IO.puts Calculator.hello("Thomas")
-IO.puts "Addition: #{Calculator.add(5, 3)}"
-IO.puts "Soustraction: #{Calculator.subtract(10, 4)}"
-IO.puts "Multiplication: #{Calculator.multiply(6, 7)}"
-IO.puts "Division: #{Calculator.divide(15, 3)}"
-IO.puts Calculator.divide(10, 0)
+IO.puts :e

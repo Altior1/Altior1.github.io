@@ -17,7 +17,7 @@ h1 {
     font-size: 2.5em;
 }
 
-.container {
+#main {
     width: 80%;
     margin: 20px auto;
     background: #fff;
@@ -37,6 +37,34 @@ ul {
 
 ul li {
     margin-right: 20px;
+}
+
+#LinkLinkedin {
+    background-image: url('https://www.linkedin.com/favicon.ico');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#LinkGit {
+    background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#LinkGit:hover {
+    background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+}
+
+#LinkLinkedin:hover{
+    background-image: url('https://www.linkedin.com/favicon.ico');
 }
 
 #foot {
