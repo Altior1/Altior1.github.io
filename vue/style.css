@@ -49,6 +49,14 @@ ul li {
     display: inline-block;
 }
 
+#kisuisje {
+    display: none;
+}
+
+#ouvaije{
+    display:none;
+}
+
 #LinkGit {
     background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
     background-size: 20px 20px;
