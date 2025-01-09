@@ -40,7 +40,6 @@ ul li {
 }
 
 #LinkLinkedin {
-    background-image: url('https://www.linkedin.com/favicon.ico');
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,7 +57,6 @@ ul li {
 }
 
 #LinkGit {
-    background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -83,4 +81,9 @@ ul li {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* les lignes qui suivent servent à se détendre */
+#destress{
+    right: 0%;
 }

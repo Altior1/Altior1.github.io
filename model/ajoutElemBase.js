@@ -20,6 +20,7 @@ function afficheFoot () {
 function ajoutEffetBtn () {
     let btnkisuisje = document.getElementById("btnkisuisje");
     let btnouvaije = document.getElementById("btnouvaije");
+    let btnPushit = document.getElementById("pushit")
     btnkisuisje.addEventListener("click", function () {
         let laDiv = document.getElementById("kisuisje");
         if (laDiv.style.display === "block") {
@@ -38,4 +39,13 @@ function ajoutEffetBtn () {
             laDiv.style.display = "block";
         }
     });
+    btnPushit.addEventListener("click", () => {
+        let balise = document.getElementById("compt");
+        balise.innerHTML = balise.innerHTML * 1 + 1;
+        if (balise.innerHTML >= 30) {
+            alert("stop, tu t'ennuie là");
+            balise.innerHTML = 1;
+        }
+
+    })
 }
